@@ -1,0 +1,14 @@
+asgiref
+Django
+django-crontab
+djangorestframework
+djangorestframework-simplejwt
+numpy
+pandas
+Pillow
+PyJWT
+python-dateutil
+python-decouple
+pytz
+six
+sqlparse

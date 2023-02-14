@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "04800196-8bdb-4f0f-90ee-8060cf209b08",
+		"name": "TODO v1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todo/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"task\":\"new todo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todo/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Todo",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NDMwMDU0LCJpYXQiOjE2NDQzNDM2NTQsImp0aSI6IjhlN2EzZWI2Y2NlNjRlNDA4MDZkNWRhOTFkMGRjNTRjIiwidXNlcl9pZCI6ImE2ZWI2Y2Q3LTFjOWItNGU0Ni05ODY3LTI1NGIxNDE0YzBiZCJ9.9fQfIS2r3vggHeTAuF6so0A88nAlSxK_oxcr3F-86B8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"is_completed\":true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todo/cf7bb03b-74e3-46f9-84fd-b77c5cdec7a5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo",
+						"cf7bb03b-74e3-46f9-84fd-b77c5cdec7a5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NDMwMDU0LCJpYXQiOjE2NDQzNDM2NTQsImp0aSI6IjhlN2EzZWI2Y2NlNjRlNDA4MDZkNWRhOTFkMGRjNTRjIiwidXNlcl9pZCI6ImE2ZWI2Y2Q3LTFjOWItNGU0Ni05ODY3LTI1NGIxNDE0YzBiZCJ9.9fQfIS2r3vggHeTAuF6so0A88nAlSxK_oxcr3F-86B8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todo/cf7bb03b-74e3-46f9-84fd-b77c5cdec7a5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo",
+						"cf7bb03b-74e3-46f9-84fd-b77c5cdec7a5",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "d0eeda41-2cf2-4746-9177-5a533125b45e",
+		"name": "TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Atharv\",\n    \"email\":\"patharv777@gmail.com\",\n    \"password\":123\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/signup/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"signup",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"patharv777@gmail.com\",\n    \"password\":123\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/login/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/forgot/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"forgot",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"otp\":\"e99929db-da13-426d-8fca-19dd8ad6bab3\",\n    \"npw\":321,\n    \"cpw\":321\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/reset/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"reset",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Resend",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/resend/forgot/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"resend",
+								"forgot",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Todo",
+			"item": [
+				{
+					"name": "Get Todos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NDMwMDU0LCJpYXQiOjE2NDQzNDM2NTQsImp0aSI6IjhlN2EzZWI2Y2NlNjRlNDA4MDZkNWRhOTFkMGRjNTRjIiwidXNlcl9pZCI6ImE2ZWI2Y2Q3LTFjOWItNGU0Ni05ODY3LTI1NGIxNDE0YzBiZCJ9.9fQfIS2r3vggHeTAuF6so0A88nAlSxK_oxcr3F-86B8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/todo/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"todo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Todo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NDMwMDU0LCJpYXQiOjE2NDQzNDM2NTQsImp0aSI6IjhlN2EzZWI2Y2NlNjRlNDA4MDZkNWRhOTFkMGRjNTRjIiwidXNlcl9pZCI6ImE2ZWI2Y2Q3LTFjOWItNGU0Ni05ODY3LTI1NGIxNDE0YzBiZCJ9.9fQfIS2r3vggHeTAuF6so0A88nAlSxK_oxcr3F-86B8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"task\":\"new todo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/todo/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"todo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Todo",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NDMwMDU0LCJpYXQiOjE2NDQzNDM2NTQsImp0aSI6IjhlN2EzZWI2Y2NlNjRlNDA4MDZkNWRhOTFkMGRjNTRjIiwidXNlcl9pZCI6ImE2ZWI2Y2Q3LTFjOWItNGU0Ni05ODY3LTI1NGIxNDE0YzBiZCJ9.9fQfIS2r3vggHeTAuF6so0A88nAlSxK_oxcr3F-86B8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"is_completed\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/todo/49e20232-a3d4-477d-aff2-ba4d28e24dfe/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"todo",
+								"49e20232-a3d4-477d-aff2-ba4d28e24dfe",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Todo",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NDMwMDU0LCJpYXQiOjE2NDQzNDM2NTQsImp0aSI6IjhlN2EzZWI2Y2NlNjRlNDA4MDZkNWRhOTFkMGRjNTRjIiwidXNlcl9pZCI6ImE2ZWI2Y2Q3LTFjOWItNGU0Ni05ODY3LTI1NGIxNDE0YzBiZCJ9.9fQfIS2r3vggHeTAuF6so0A88nAlSxK_oxcr3F-86B8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://django-todo-v2.herokuapp.com/api/todo/49e20232-a3d4-477d-aff2-ba4d28e24dfe/",
+							"protocol": "https",
+							"host": [
+								"django-todo-v2",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"todo",
+								"49e20232-a3d4-477d-aff2-ba4d28e24dfe",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

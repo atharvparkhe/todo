@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/todo_checkbox"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="182dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/edit_button"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/edit"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="ImageContrastCheck" />
+
+</LinearLayout>

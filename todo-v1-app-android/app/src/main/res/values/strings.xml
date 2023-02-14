@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <string name="key">Value</string>
+    <string name="new_task">New Task</string>
+    <string name="add_task">Add Task</string>
+    <string name="task">Task</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+    <string name="task_string">task_string</string>
+    <string name="todo">TODO</string>
+</resources>
